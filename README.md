@@ -13,9 +13,9 @@
   * [Web development technologies](#web-development-technologies)
   * [Graphic design and branding](#graphic-design-and-branding)
   * [Challenges](#challenges)
-* [Repository Link:](#repository-link:)
+* [Repository Link:](#repository-link)
 * [Generated README Example:](#generated-README-example)
-* [Application Screenshots:](#application-screenshots:)
+* [Application Screenshots:](#application-screenshots)
 
 ---
 
