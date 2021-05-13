@@ -1,70 +1,54 @@
-# README Markdown File Generator
-![MIT](https://img.shields.io/badge/license-MIT-yellow)
+# README Generator
 
-## Description
+## This Github repository contains the code for a README.md generator.
 
-### This GitHub repository contains the code for a README.md generator.
+## The generator allows a user to quickly create a professional README.md file that follows establised GitHub's best practices and standards.
 
 ---
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
+* [Motivation and Research](#motivation-and-research)
+* [Development](#development)
+  * [Web development technologies](#web-development-technologies)
+  * [Graphic design and branding](#graphic-design-and-branding)
+  * [Challenges](#challenges)
+* [Repository Link:](#repository-link:)
+* [Generated README Example:](#generated-README-example)
+* [Application Screenshots:](#application-screenshots:)
 
 ---
 
-## Motivation & Research
+## Motivation and Research
 
-The motivation behind this project came from the experience of spending a lot of time creating markdown files for my projects.
-This project was built as a tool to save time when writing markdown files.
-This projects provides the user a template for a README file so that one can be generated in a timely fashion.
-In creating this project I learned the use of node and npm.
+The motivation behind this project came from the experience of spending a lot of time creating markdown files for my projects. This project provides the user a template for a README file so that one can be generated in a timely fashion while following established README conventions and standards.
 
-## Installation
+## Development
 
-To install my project, simply clone it to your local machine via the link in my GitHub repository. Node must be installed. Once this is installed use 'npm install inquirer' to install the inquirer. Once these steps have been followed you will be able to run the README generator.
+### Web development technologies
 
-## Usage
+Development of the project was centered around Node.js, an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser and npm, a package manager for the JavaScript programming language.
+ 
+Links to the languges and tools used to build this project are included below:
 
-To use this application, open the folder in VSCode. Then open a terminal, making sure it is running from the correct directory. Then, simply run ```'node index.js'``` and answer the questions provided.
+* Markdown
+* Javascript ES6
+* Node.js
+    * https://nodejs.org/
+* npm
+    * https://www.npmjs.com/
+* npm Inquirer
+    * https://www.npmjs.com/package/inquirer
 
-![README generator questions in terminal.](./assets/images/image1.jpg)
-![Generated README.md file.](./assets/images/image2.jpg)
+### Graphic design and branding
 
-## Credits
+Working from a template for a best practice README.md file, using Node.js I developed the needed JavaScript to prompt the user for information to populate the file with the required text. Following established conventions and layout, I ensured the resulting README.md has the ability to display all the relevant information, images and links as well as contact details.
 
-None.
+As this project provides a template for other users to create their own README file, the addition of personal branding is unnecessary.
 
-## License
+### Challenges
 
-
-<a href="https://choosealicense.com/licenses/mit/">MIT</a> License
-
-Copyright (c) 2021 Bridget McCavanagh
-
-
-## Features
-
-This project provides the template for a README.md file that pays attention to aesthetic layout as well as content.
-
-## How to Contribute
-
-![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)
-
-
-
-### Questions
-
-To view my repositories check out my GitHub:
-
-* http://www.github.com/blmccavanagh
-
-For any questions contact me at:
-
-* b@justcallmeb.com
+The development of this application required the use of Node.js and npm, including the installation of the Inquirer.js package. These were new technologies for me as a web developer and required testing and research to understand these tools in order to implement them to create a working project for other users.
 
 ---
 
@@ -73,5 +57,53 @@ For any questions contact me at:
 **Thank you for visiting.**
 
 </div>
+
+---
+
+### Repository Link:
+
+* https://github.com/blmccavanagh/README-Generator
+
+---
+
+### Generated README Example:
+
+View the generated <a href="generatedREADME.md">README</a> file here.
+
+<div align="center">
+
+---
+
+### Application Screenshots:
+
+</div>
+
+<div align="center">
+
+*Template questions run in the terminal* 
+
+</div>
+
+![README generator questions in the terminal.](./assets/images/image1.jpg)
+
+---
+
+<div align="center">
+
+*Generated README.md file*
+
+</div>
+
+![Generated README.md file.](./assets/images/image2.jpg)
+
+---
+
+<div align="center">
+
+*README Generator walkthrough video*
+
+</div>
+
+<a href="https://drive.google.com/file/d/11aFurmS1GbDaJPlSg9OdnQ-NyPjMWemB/view?usp=sharing">Click here to watch the video!</a>
 
 ---
