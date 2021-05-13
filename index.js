@@ -16,31 +16,31 @@ const questions = [
         type: 'input',
         name: 'description',
         message: 'Describe your application:',
-        default: '',
+        default: 'A brief description of what your project does:',
     },
     {
         type: 'input',
         name: 'motivation',
         message: 'What was your motivation?',
-        default: '',
+        default: 'The motivation behind the development of this website...',
     },
     {
         type: 'input',
         name: 'why',
         message: 'Why did you build this project?',
-        default: '',
+        default: 'This project was built...',
     },
     {
         type: 'input',
         name: 'problem',
         message: 'What problem does it solve?',
-        default: '',
+        default: 'This projects helps to solve...',
     },
     {
         type: 'input',
         name: 'learn',
         message: 'What did you learn?',
-        default: '',
+        default: 'When developing this project...',
     },
     {
         type: 'input',
@@ -56,41 +56,53 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'images',
-        message: 'Include the relative filepath for application images:',
+        name: 'image1',
+        message: 'Include the relative filepath for application image 1:',
         default: '',
-        // add multiple images
-        // add another y/n
+    },
+    {
+        type: 'input',
+        name: 'altImage1',
+        message: 'Briefly describe this image:',
+        default: '',
+    },
+    {
+        type: 'confirm',
+        name: 'addImage2',
+        message: 'Do you want to include another image? y/n',
+        default: false,
+    },
+    {
+        type: 'input',
+        name: 'image2',
+        message: 'Include the relative filepath for application image 2:',
+        default: '',
+        when: (answers) => answers.addImage2 === true,
+    },
+    {
+        type: 'input',
+        name: 'altImage2',
+        message: 'Briefly describe this image:',
+        default: '',
+        when: (answers) => answers.addImage2 === true,
     },
     {
         type: 'input',
         name: 'credits',
         message: 'List collaborators, any third party assets that require attribution, creators or links to tutorials.',
         default: '',
-        // add multiple contributors
-        // add another y/n
     },
     {
         type: 'list',
         name: 'license',
         message: 'What license do you want to use?',
-        choices: ["Apache", "GNU", "MIT", "BSD-3", "None"]
-    },
-    {
-        type: 'list',
-        name: 'badges',
-        message: 'What badges would you like to include?',
-        choices: ["Contributers", "Stars", "Forks", "None"]
-        // add multiple badges
-        // add another y/n
+        choices: ["Apache", "GNU", "MIT", "BSD-2", "BSD-3", "None"],
     },
     {
         type: 'input',
         name: 'features',
         message: 'List the features of your project here:',
         default: '',
-        // add multiple features
-        // add another y/n
     },
     {
         type: 'input',
@@ -106,6 +118,12 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'name',
+        message: 'What is your full name?',
+        default: '',
+    },
+    {
+        type: 'input',
         name: 'github',
         message: 'What is your GitHub username?',
         default: '',
@@ -115,14 +133,21 @@ const questions = [
         name: 'email',
         message: 'What is your email address?',
         default: 'me@myemail.com',
-        // require @ - prompt/alert
+        validate: answer => {
+            const pass = answer.match(/\S+@\S+\.\S+/);
+            if (pass) {
+                return true;
+            } else {
+                return 'Please enter a valid email address!';
+            }
+        }
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log("Success!")
+    err ? console.error(err) : console.log("You have successfully created your README.md!")
     );
 }
 

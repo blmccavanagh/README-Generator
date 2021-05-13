@@ -1,60 +1,77 @@
-# README Generator
+# README Markdown File Generator
+![MIT](https://img.shields.io/badge/license-MIT-yellow)
 
-  ## Description
+## Description
 
-  This Github Repository contains the code for a README generator.
-  To create an aplication that provides the skeleton for a user to create a markdown file.
-  As a time saving utility.
-  It saves time when writing a markdown file.
-  How to use node and npm.
+### This GitHub repository contains the code for a README.md generator.
 
-  ## Table of Contents
+---
 
-  * Installation
-  * Usage
-  * Credits
-  * License
+## Table of Contents
 
-  ## Installation
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
-  Node must be installed to use this project.
+---
 
-  ## Usage
+## Motivation & Research
 
-  It is run using node.
+The motivation behind this project came from the experience of spending a lot of time creating markdown files for my projects.
+This project was built as a tool to save time when writing markdown files.
+This projects provides the user a template for a README file so that one can be generated in a timely fashion.
+In creating this project I learned the use of node and npm.
 
-  ![]./assets/images/image.jpg
+## Installation
 
-  ## Credits
+To install my project, simply clone it to your local machine via the link in my GitHub repository. Node must be installed. Once this is installed use 'npm install inquirer' to install the inquirer. Once these steps have been followed you will be able to run the README generator.
 
-  
+## Usage
 
-  ## License
+To use this application, open the folder in VSCode. Then open a terminal, making sure it is running from the correct directory. Then, simply run ```'node index.js'``` and answer the questions provided.
 
-  MIT
+![README generator questions in terminal.](./assets/images/image1.jpg)
+![Generated README.md file.](./assets/images/image2.jpg)
 
-  ## Badges
+## Credits
 
-  ![]Stars
+None.
 
-  ## Features
+## License
 
-  Generator.
 
-  ## How to Contribute
+<a href="https://choosealicense.com/licenses/mit/">MIT</a> License
 
-  None.
+Copyright (c) 2021 Bridget McCavanagh
 
-  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
-  ^^ only include if contributers included
 
-  ### Questions
+## Features
 
-  To view my repositories check out my github:
+This project provides the template for a README.md file that pays attention to aesthetic layout as well as content.
 
-  * http://www.github.com/blmccavanagh
+## How to Contribute
 
-  For any questions contact me at:
+![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)
 
-  * blmccavanagh
 
+
+### Questions
+
+To view my repositories check out my GitHub:
+
+* http://www.github.com/blmccavanagh
+
+For any questions contact me at:
+
+* b@justcallmeb.com
+
+---
+
+<div align="center">
+
+**Thank you for visiting.**
+
+</div>
+
+---
